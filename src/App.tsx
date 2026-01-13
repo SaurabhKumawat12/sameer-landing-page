@@ -28,6 +28,15 @@ import {
   ShieldCheck
 } from 'lucide-react';
 
+declare global {
+  interface Window {
+    __VIEWCONTENT_FIRED__?: boolean;
+    __SUBSCRIBE_FIRED__?: boolean;
+    __SUBSCRIBE_EVENT_ID__?: string;
+    fbq?: (...args: any[]) => void;
+  }
+}
+
 function App() {
   const [showWhatsAppPopup, setShowWhatsAppPopup] = useState(false);
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
@@ -67,7 +76,7 @@ function App() {
 
     React.useEffect(() => {
       const tick = () => {
-        const diff = Math.max(0, target - new Date());
+        const diff = Math.max(0, target.getTime() - Date.now());
         const m = Math.floor((diff / (1000 * 60)) % 60);
         const s = Math.floor((diff / 1000) % 60);
         setTimeLeft({ m, s });
@@ -77,7 +86,7 @@ function App() {
       return () => clearInterval(id);
     }, [target]);
 
-    const Box = ({ label, value }) => (
+    const Box = ({ label, value }: { label: string; value: number }) => (
       <div className="min-w-[80px] md:min-w-[100px]">
         <div className="relative rounded-xl p-4 bg-white/5 border border-white/10 backdrop-blur-md shadow-[inset_0_0_40px_rgba(255,255,255,0.06)]">
           <div
@@ -159,6 +168,43 @@ function App() {
                     Hi, I’m
                     <span className="text-[#C7A055]"> Sameer Suthar</span>
                   </h1>
+                  <div className="relative group mx-auto w-fit md:hidden">
+
+                    <div className="relative w-64 md:w-80 h-80 rounded-2xl overflow-hidden 
+                          shadow-2xl border border-[#E9E4D8] bg-white 
+                          transition-all duration-500 
+                          group-hover:shadow-[0_15px_60px_rgba(0,0,0,0.20)] 
+                          group-hover:-translate-y-1">
+                      <img
+                        src="/assets/images/sameer-suthar.jpeg"
+                        alt="Sameer Suthar – Student Affiliate Marketer"
+                        className="w-full h-full object-cover"
+                      />
+
+                      {/* Bottom Overlay */}
+                      <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                        <h3 className="text-lg md:text-xl font-bold text-white">
+                          Sameer Suthar
+                        </h3>
+                        <p className="text-sm md:text-base text-[#C7A055] font-semibold">
+                          Student • Affiliate Marketer
+                        </p>
+                      </div>
+
+                      {/* Vertical Badge */}
+                      <div className="absolute top-4 right-0 bg-[#182432] text-white font-bold 
+                            px-3 py-2 rounded-l-lg shadow-md 
+                            flex flex-col items-center space-y-1">
+                        <img
+                          src="/assets/images/stravix.png"
+                          alt="StraviX Logo"
+                          className="w-14 md:w-20"
+                        />
+                        <p className="text-sm md:text-md">StraviX</p>
+                      </div>
+                    </div>
+
+                  </div>
 
                   <h2 className="text-xl md:text-2xl font-semibold text-[#182432]">
                     A 21-year-old student who built
@@ -222,7 +268,7 @@ function App() {
 
               {/* RIGHT SIDE – PROFILE */}
               <div className="flex justify-center lg:justify-end">
-                <div className="relative group">
+                <div className="relative group hidden md:block">
 
                   <div className="relative w-64 md:w-80 h-80 rounded-2xl overflow-hidden 
                           shadow-2xl border border-[#E9E4D8] bg-white 
@@ -578,7 +624,7 @@ function App() {
 
                 <div className="relative mb-6">
                   <div className="overflow-x-auto scrollbar-hide flex md:justify-center">
-                    <div className="flex space-x-6 pb-4" style={{ width: "max-content" }}>
+                    <div className="flex space-x-6 pb-4 w-full overflow-x-auto scrollbar-hide ">
 
                       {/* Videos – SAME IDS */}
                       {[
@@ -587,7 +633,8 @@ function App() {
                         "lZxH1DQpKy0",
                         "ZSp1-UsgmDs",
                         "dFh03dWJ950",
-                        
+                        "dFh03dWJ950",
+
                       ].map((id, index) => (
                         <div
                           key={index}
