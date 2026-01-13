@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rajanibagh.stravix.in/sitemap.xml
+Sitemap: https://sameersuthar.stravix.in/sitemap.xml

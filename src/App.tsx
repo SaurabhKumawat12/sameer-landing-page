@@ -288,7 +288,7 @@ function App() {
               <br className="hidden md:block" />
               Yahan aap dekhenge <span className="font-semibold text-[#C7A055]">real students, beginners aur working log</span>
               jo StraviX ke structured system ke saath
-              apni <span className="font-semibold text-[#C7A055]">first digital income</span> aur
+              apni <span className="font-semibold text-[#C7A055]">first digital income </span> aur
               confidence build kar paaye.
               <br /><br />
               Agar aap bhi soch rahe ho —
@@ -411,7 +411,7 @@ function App() {
                             shadow-xl hover:shadow-2xl transition-all duration-500">
                       <div className="relative">
                         <img
-                          src="/assets/images/10k+ income.png"
+                          src="/assets/images/10k-income.png"
                           alt="Earned 10k with StraviX"
                           className="w-full h-64 md:h-96 object-contain bg-white"
                         />
@@ -572,7 +572,7 @@ function App() {
                   In videos mein aap dekhenge ki kaise
                   students, working professionals aur beginners ne
                   StraviX ke structured system ke saath
-                  apna <span className="font-semibold text-[#C7A055]">first digital income</span>
+                  apna <span className="font-semibold text-[#C7A055]">first digital income </span>
                   aur self-belief build kiya.
                 </p>
 
@@ -586,6 +586,8 @@ function App() {
                         "vPMrU7nWzEk",
                         "lZxH1DQpKy0",
                         "ZSp1-UsgmDs",
+                        "dFh03dWJ950",
+                        
                       ].map((id, index) => (
                         <div
                           key={index}
@@ -1314,15 +1316,52 @@ shadow-lg hover:shadow-[#25D366]/40 flex items-center gap-2 mx-auto"
               {[
                 {
                   title: "Bought iPhone 13 With My Own Money",
-                  src: "https://www.youtube.com/embed/VIDEO_ID_1"
+                  src: "https://www.youtube.com/embed/Q7FXMKC6_5E"
                 },
                 {
                   title: "₹1,00,000 Income Achievement",
-                  src: "https://www.youtube.com/embed/VIDEO_ID_2"
+                  src: "https://www.youtube.com/embed/rHK0oLYC4WU"
                 },
                 {
+                  title: "100K Income Celebration",
+                  src: "https://www.youtube.com/embed/5xEgKSpxcAU"
+                }
+              ].map((v, idx) => (
+                <div
+                  key={idx}
+                  className="bg-white/80 backdrop-blur-xl rounded-2xl p-6 
+          shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1"
+                >
+                  <h3 className="text-lg font-bold text-[#182432] mb-4 text-center">
+                    {v.title}
+                  </h3>
+
+                  <div className="relative aspect-[9/16] rounded-xl overflow-hidden">
+                    <iframe
+                      src={v.src}
+                      className="absolute inset-0 w-full h-full rounded-xl"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-24">
+
+              {[
+                {
                   title: "Fully Sponsored 2-Day Trip",
-                  src: "https://www.youtube.com/embed/VIDEO_ID_3"
+                  src: "https://www.youtube.com/embed/jdkcFHSAU78"
+                },
+                {
+                  title: "Fully Sponsored - Room Tour",
+                  src: "https://www.youtube.com/embed/z0WHf151VjM"
+                },
+                {
+                  title: "Live On Insta With StraviX CEO - Aakash Sir",
+                  src: "https://www.youtube.com/embed/7vtLOB7FEFs"
                 }
               ].map((v, idx) => (
                 <div
