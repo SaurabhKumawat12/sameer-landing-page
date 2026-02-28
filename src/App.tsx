@@ -245,7 +245,7 @@ function App() {
                 {/* CTA */}
                 <div>
                   <a
-                    href="https://wa.aisensy.com/aaauzt"
+                    href="https://alvo.chat/7jOI"
                     target="_blank"
                     onClick={trackSubscribe}
                     rel="noopener noreferrer"
@@ -507,7 +507,7 @@ function App() {
                     ⚡ Same roadmap, same system — only <span className="font-bold">6/10 mentorship slots</span> left this month.
                   </p>
                   <a
-                    href="https://wa.aisensy.com/aaauzt"
+                    href="https://alvo.chat/7jOI"
                     target="_blank"
                     onClick={trackSubscribe}
                     rel="noopener noreferrer"
@@ -676,7 +676,7 @@ function App() {
                   </p>
 
                   <a
-                    href="https://wa.aisensy.com/aaauzt"
+                    href="https://alvo.chat/7jOI"
                     target="_blank"
                     onClick={trackSubscribe}
                     rel="noopener noreferrer"
@@ -902,7 +902,7 @@ shadow-lg hover:shadow-[#25D366]/40 flex items-center gap-2 mx-auto"
                 </p>
 
                 <a
-                  href="https://wa.aisensy.com/aaauzt"
+                  href="https://alvo.chat/7jOI"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={trackSubscribe}
@@ -1061,7 +1061,7 @@ shadow-lg hover:shadow-[#25D366]/40 flex items-center gap-2 mx-auto"
               </p>
 
               <a
-                href="https://wa.aisensy.com/aaauzt"
+                href="https://alvo.chat/7jOI"
                 target="_blank"
                 onClick={trackSubscribe}
                 rel="noopener noreferrer"
@@ -1235,7 +1235,7 @@ shadow-lg hover:shadow-[#25D366]/40 flex items-center gap-2 mx-auto"
                 </p>
 
                 <a
-                  href="https://wa.aisensy.com/aaauzt"
+                  href="https://alvo.chat/7jOI"
                   target="_blank"
                   onClick={trackSubscribe}
                   rel="noopener noreferrer"
@@ -1447,7 +1447,7 @@ shadow-lg hover:shadow-[#25D366]/40 flex items-center gap-2 mx-auto"
                 </p>
 
                 <a
-                  href="https://wa.aisensy.com/aaauzt"
+                  href="https://alvo.chat/7jOI"
                   className="inline-flex items-center justify-center gap-2 
           bg-[#25D366] hover:bg-[#20C157] text-white font-bold 
           py-4 px-6 rounded-full text-[16px] shadow-lg 
@@ -1535,7 +1535,7 @@ shadow-lg hover:shadow-[#25D366]/40 flex items-center gap-2 mx-auto"
 
             {/* CTA Button */}
             <a
-              href="https://wa.aisensy.com/aaauzt"
+              href="https://alvo.chat/7jOI"
               target="_blank"
               onClick={trackSubscribe}
               rel="noopener noreferrer"
@@ -1551,7 +1551,7 @@ shadow-lg hover:shadow-[#25D366]/40 flex items-center gap-2 mx-auto"
           {/* Floating WhatsApp Button (Mobile) */}
           <div className="fixed bottom-4 left-4 right-4 z-50 md:hidden">
             <a
-              href="https://wa.aisensy.com/aaauzt"
+              href="https://alvo.chat/7jOI"
               onClick={trackSubscribe}
               className="w-full bg-[#25D366] hover:bg-[#20C157] text-white font-bold py-4 px-6 
              rounded-full text-lg shadow-2xl flex items-center justify-center gap-3 
@@ -1671,7 +1671,7 @@ shadow-lg hover:shadow-[#25D366]/40 flex items-center gap-2 mx-auto"
               </p>
 
               <a
-                href="https://wa.aisensy.com/aaauzt"
+                href="https://alvo.chat/7jOI"
                 target="_blank"
                 onClick={trackSubscribe}
                 rel="noopener noreferrer"
@@ -1748,7 +1748,7 @@ shadow-lg hover:shadow-[#25D366]/40 flex items-center gap-2 mx-auto"
 
               {/* CTA Button */}
               <a
-                href="https://wa.aisensy.com/aaauzt"
+                href="https://alvo.chat/7jOI"
                 target="_blank"
                 onClick={trackSubscribe}
                 rel="noopener noreferrer"
